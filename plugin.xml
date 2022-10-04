@@ -44,7 +44,9 @@
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+        <queries>
+                <package android:name="com.ubercab" />
+        </queries>
         </config-file>
         <source-file src="src/android/AppAvailability.java" target-dir="src/com/ohh2ahh/appavailability/" />
     </platform>
